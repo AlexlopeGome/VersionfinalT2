@@ -1,0 +1,97 @@
+
+
+#todo{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    color:blue !important;
+    background-color:yellow;
+    margin-right: 300PX;
+    
+ 
+    }
+
+    
+
+    h2{
+        position:relative;
+       
+       
+    }
+
+    #portaretrato:active{
+    flex-direction: row-reverse;
+    margin-left: 200px;
+ 
+}
+
+#portaretrato{
+    display: flex;
+    flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ position:relative;
+}
+.original:active{
+    z-index: -1;
+  transform: scale(1, 1)translate(50%,0%) skewx(50deg);
+  filter:brightness(0%);
+  margin-left: -210px;
+ 
+
+}
+.portafotos{
+    position: relative;
+
+
+}
+
+.sombra{
+    
+    position: relative;
+    left: 0%;
+    top:0%
+}
+.original{
+   
+    position: absolute;
+    left: 0%;
+    top:0%
+}
+
+.original:hover{
+    filter:grayscale(100%);
+}
+#invisible{
+    visibility:hidden;
+}
+
+
+img{
+    width:200px;
+}
+
+
+
+
+
+h2:hover{
+    font-size: 30px;
+}
+
+
+
+@media screen and (max-width:550px) {
+
+    body{
+        visibility: hidden;
+    }
+        #invisible{
+
+            visibility:visible;
+            background-color: white;
+        }
+
+    }
